@@ -23,51 +23,49 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <title>jQuery Mobile page</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="themes/333.css" />
-    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
 
-    <title>高雄美食</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+
     
+    
+
+    <title>英雄聯盟</title>
+</head>
+<style>
+    body {
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+</style>
+<body>
+
+    <!-- 第一分頁 -->
     <div data-role="page" id="page00">
- 
+
         <div data-role="header">
             <h1>英雄聯盟世界大賽</h1>
         </div><!-- /header -->
  
-        <div role="main" class="ui-content" data-role="collapsible">
+        <div role="main" class="ui-content" data-role="collapsible" >
             <h1>英雄聯盟世界大賽</h1>
             <p>英雄聯盟世界大賽2013-2016冠軍隊伍</p>
-            <div data-role="collapsible" data-theme="a" data-content-theme="b">
-                <div data-role="collapsible">
-                    <h3>S3冠軍SKT</h3>
-                <p>123</p>
-                </div></div>
-                <div data-role="collapsible">
-                    <h3>S4冠軍SSW</h3>
-                <p>123</p>
-                </div></div>
-                <div data-role="collapsible">
-                    <h3>S5冠軍SKT</h3>
-                <p>123</p>
-                </div></div>
-                <div data-role="collapsible">
-                    <h3>S6冠軍SKT</h3>
-                <p>123</p>
-                </div></div>
+            <ul data-role="listview" data-inset="true">
+                <li data-icon="info"><a href="#page01">S3冠軍SKT</a></li>
+                <li data-icon="info"><a href="#page02">S4冠軍SSW</a></li>
+                <li data-icon="info"><a href="#page03">S5冠軍SKT</a></li>
+                <li data-icon="info"><a href="#page04">S6冠軍SKT</a></li>
+            </ul>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="bullets">S3冠軍SKT</a></li>
+                    <li><a href="#" data-icon="bullets">S4冠軍SSW</a></li>
+                    <li><a href="#" data-icon="bullets">S5冠軍SKT</a></li>
+                    <li><a href="#" data-icon="bullets" data-transition="slidedown">S6冠軍SKT</a></li>
+                </ul>
             </div>
             
+            
+
         </div><!-- /content -->
  
         <div data-role="footer" data-position="fixed">
@@ -76,7 +74,7 @@
  
     </div><!-- /page -->
 
-    <!-- 第一分頁 -->
+    <!-- 第二分頁 -->
     <div data-role="page" id="page01">
 
         <div data-role="header">
@@ -85,13 +83,17 @@
 
         <div role="main" class="ui-content">
             <h1>S3冠軍SKT</h1>
-            <p>第三屆世界大賽冠軍SKT由上路Impact.打野Bengi.中路Faker.下路Piglet.輔助poonmandu所組成，其中最受矚目的就是中路新瀉Faker，當時SKT比賽時其實是背負著很大壓力的，因為當時名氣完全不如現在，不過在幾場的比賽中展現輾壓的實力，包括冠軍賽3:0橫掃亞軍RYL拿下世界冠軍，而最亮眼的選手就是操作跟鬼一樣的17歲少年Faker。
+            <p>第三屆世界大賽冠軍SKT由上路Impact.打野Bengi.中路Faker.下路Piglet.輔助poonmandu所組成，其中最受矚目的就是中路新秀Faker，
+               當時SKT比賽時其實是背負著很大壓力的，因為當時名氣完全不如現在，不過在幾場的比賽中展現輾壓的實力，包括冠軍賽3:0橫掃亞軍RYL
+               拿下世界冠軍，而最亮眼的選手就是操作跟鬼一樣的17歲少年Faker。
             </p>
             <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
+                <li><a href="https://www.youtube.com/watch?v=CFfxsv8rrO0">影片來源:https://www.youtube.com/watch?v=CFfxsv8rrO0</a></li>
+            </ul>           
+            
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CFfxsv8rrO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <a href="#page02">S4冠軍SSW</a>
             <a href="#page00">回到 主頁面</a>
 
@@ -102,7 +104,7 @@
         </div><!-- /footer -->
     </div><!-- /page -->
 
-    <!-- 第二分頁 -->
+    <!-- 第三分頁 -->
     <div data-role="page" id="page02">
 
         <div data-role="header">
@@ -111,13 +113,17 @@
 
         <div role="main" class="ui-content">
             <h1>S4冠軍SSW</h1>
-            <p>S4世界冠軍SSW由上路Looper.打野.DanDy中路Pawn.下路Imp.輔助Mate所組成，在出國之前的韓國國內聯賽中，SSW與SKT在爭奪出征世界大賽的門票，是一場BO5誰獲勝誰就可以代表韓國出賽，不過按照常理來說能打進資格賽的隊伍實力應該都是頂尖且相差不大的，更何況對手還是去年的世界冠軍SKT，但是SSW卻在這場BO5資格賽打出了與SKT極大的差距，不僅大比分3:0輾壓，遊戲內容幾乎是慘不忍睹，別的不說光是中路的Pawn就單殺Faker數次，而出國正式開始世界賽之後SSW照樣發揮出百分之百的實力，每一路的選手都明顯實力過人，整個世界賽只輸兩場，在當時真的可以說是世界上最強的5個人群聚一隊。
+            <p>S4世界冠軍SSW由上路Looper.打野.DanDy中路Pawn.下路Imp.輔助Mate所組成，在出國之前的韓國國內聯賽中，SSW與SKT在爭奪出征世界大賽的門票，
+               是一場BO5誰獲勝誰就可以代表韓國出賽，不過按照常理來說能打進資格賽的隊伍實力應該都是頂尖且相差不大的，更何況對手還是去年的世界冠軍SKT，
+               但是SSW卻在這場BO5資格賽打出了與SKT極大的差距，不僅大比分3:0輾壓，遊戲內容幾乎是慘不忍睹，別的不說光是中路的Pawn就單殺Faker數次，
+               而出國正式開始世界賽之後SSW照樣發揮出百分之百的實力，每一路的選手都明顯實力過人，整個世界賽只輸兩場，在當時真的可以說是世界上最強的5個人群聚一隊。
             </p>
             <ul>
-                <li>小吃一</li>
-                <li>小吃二</li>
-                <li>小吃三</li>
+                <li><a href="https://www.youtube.com/watch?v=cDsOmyklkzo">影片來源:https://www.youtube.com/watch?v=cDsOmyklkzo</a></li>
             </ul>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cDsOmyklkzo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <a href="#page03">S5冠軍SKT</a>
             <a href="#page00">回到 主頁面</a>
 
@@ -128,7 +134,7 @@
         </div><!-- /footer -->
     </div><!-- /page -->
 
-    <!-- 第三分頁 -->
+    <!-- 第四分頁 -->
     <div data-role="page" id="page03">
 
         <div data-role="header">
@@ -137,13 +143,17 @@
 
         <div role="main" class="ui-content">
             <h1>S5冠軍SKT</h1>
-            <p>S5世界冠軍SKT由上路Marin.打野Bengi.中路Faker.下路Bang.輔助Wolf.替補中路Easyhoon所組成，這屆的SKT因為賽制關係SKT.K隊與SKT.S隊兩隊合併，結果又組成了一個新高峰隊伍，在去年SKT落敗之後隔年又從頭再來過，並且是以比當年S3奪冠時還猛的氣勢，雖然在季中邀請賽失利只拿到亞軍，但是在韓國夏季賽以及世界大賽變成完全體的SKT，世界大賽開打後從小組賽道4強賽結束為止都維持0敗戰績，為一一敗就是在冠軍賽上輸給對手KOO一場，不過這並不影響SKT的士氣，一樣以3:1姿態再度奪冠，這時的SKT已經是雙冠王，英雄聯盟界唯一一支雙冠隊伍誕生，而Bengi和Faker也雙雙成為雙冠選手。
+            <p>S5世界冠軍SKT由上路Marin.打野Bengi.中路Faker.下路Bang.輔助Wolf.替補中路Easyhoon所組成，這屆的SKT因為賽制關係SKT.K隊與SKT.S隊兩隊合併，
+               結果又組成了一個新高峰隊伍，在去年SKT落敗之後隔年又從頭再來過，並且是以比當年S3奪冠時還猛的氣勢，雖然在季中邀請賽失利只拿到亞軍，但是在韓國
+               夏季賽以及世界大賽變成完全體的SKT，世界大賽開打後從小組賽道4強賽結束為止都維持0敗戰績，為一一敗就是在冠軍賽上輸給對手KOO一場，不過這
+                並不影響SKT的士氣，一樣以3:1姿態再度奪冠，這時的SKT已經是雙冠王，英雄聯盟界唯一一支雙冠隊伍誕生，而Bengi和Faker也雙雙成為雙冠選手。
             </p>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="https://www.youtube.com/watch?v=kBm38x-ujcg">影片來源:https://www.youtube.com/watch?v=kBm38x-ujcg</a></li>
             </ul>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kBm38x-ujcg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <a href="#page04">S6冠軍SKT</a>
             <a href="#page00">回到 主頁面</a>
 
@@ -154,7 +164,7 @@
         </div><!-- /footer -->
     </div><!-- /page -->
 
-    <!-- 第四分頁 -->
+    <!-- 第五分頁 -->
     <div data-role="page" id="page04">
 
         <div data-role="header">
@@ -169,10 +179,11 @@
                 大賽中拿下了3屆足足佔了一半。
             </p>
             <ul>
-                <li>小吃一</li>
-                <li>小吃二</li>
-                <li>小吃三</li>
+                <li><a href="https://www.youtube.com/watch?v=O2dNPkSjekg">影片來源:https://www.youtube.com/watch?v=O2dNPkSjekg</a></li>
             </ul>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/O2dNPkSjekg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <a href="#page01">S3冠軍SKT</a>
             <a href="#page00">回到 主頁面</a>
 
