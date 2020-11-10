@@ -17,3 +17,12 @@ img{
     padding-bottom: 10%;
     overflow: hidden;
 }
+
+.bg {
+    background-image: url(images/icons/77.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    max-width: 100%;
+}
